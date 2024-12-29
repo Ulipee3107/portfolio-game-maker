@@ -1,0 +1,20 @@
+//obj_moving_obstacle: add event: steps:
+
+x+=hsp
+y+=vsp
+
+if x<0 {hsp=-hsp}
+if x>room_height {hsp=-hsp}
+if y<0 {vsp=-vsp}
+if y>room_height {vsp=-vsp}
+
+//obj_moving_obstacle: add event: create:
+//you choose the numbers
+
+hsp=random_range(-number,number)
+vsp=random_range(-number,number)
+
+//(If you want the obstacle to reset the room when it collides with the player)
+//obj_player: add event: collision: obj_moving_obstacle: 
+
+room_restart()
