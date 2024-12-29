@@ -1,0 +1,4 @@
+//obj_player: create event: key pressed -(choose the button on keyboard for save your game)
+game_save("GameName_SAVE")
+//obj_player: create event: key pressed -(choose the button on keyboard for load your game)
+game_load("GameName_SAVE")
