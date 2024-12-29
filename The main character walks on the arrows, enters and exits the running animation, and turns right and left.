@@ -1,4 +1,4 @@
-//obj_player: creat event: steps:
+//obj_player: add event: steps:
 
 if keyborad_check(vk_up)
 {
